@@ -1,29 +1,26 @@
 <div class="container">
-    <div class="row">
-      <div class="col-lg-6 text-left mt-5">
-        <h2 class="font-weight-bold">Delicious Food Menu</h2>
+    <div class="p-grid">
+      <div class="col-12 p-lg-6 p-text-left">
+        <h2 class="p-text-bold">Delicious Food Menu</h2>
         <h2>In your phone</h2>
         <p>Ayo segera pilih dan pesan makanan favorit anda</p>
-        <button class="linov-btn" to="/foods"> Pesan</button>
+        <button pButton type="button" label="Pesan" icon="pi pi-arrow-right" iconPos="left" class="linov-btn" routerLink="/foods"></button>
       </div>
-      <div class="col-lg-6">
-        <img class="img-fluid" src="../assets/images/ilustrasi.png" height="400px" alt="">
+      <div class="col-12 p-lg-6">
+        <img class="img-fluid" src="../assets/images/{{img}}.png" height="400px" alt="">
       </div>
     </div>
-    <div class="row mb-3 mt-3">
-      <div class="col-lg-6">
-        <h2 class="text-left mb-3">Best <span><strong>Foods</strong></span></h2>
+    <div class="p-grid">
+      <div class="col-12 p-lg-6 ">
+        <h2 class="p-text-left">Best <span><strong>Foods</strong></span></h2>
       </div>
-      <div class="col-lg-6 ml-auto text-right">
-        <button class="linov-btn" to="/foods">Lihat semua</button>
+      <div class="col-12 p-lg-6  p-text-right p-mt-3">
+        <button class="linov-btn" label="Lihat semua" icon="pi pi-eye" iconPos="left" pButton type="button" routerLink="/foods"> </button>
       </div>
     </div>
   </div>
-<app-cart></app-cart>
-<app-food-detail></app-food-detail>
-<app-product-card></app-product-card>
-<app-success></app-success>
-<div class="text-center">
+<router-outlet></router-outlet>
+<div  class="copy">
     <hr>
-    <p class="copy">2020 Copyright Reynaldi Putra Hertiansa</p>
+    <p>2020 Copyright Reynaldi Putra Hertiansa</p>
 </div>

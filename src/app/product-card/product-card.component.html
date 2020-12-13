@@ -1,1 +1,14 @@
-<p>product-card works!</p>
+<div   class="p-grid">
+    <div *ngFor="let product of products"   class=" p-col-12 p-md-6 p-lg-4 p-mb-2">
+        <p-card header="{{product.nama}}" styleClass="p-card-shadow">
+            <p-header>
+                <img alt="Card" src="../../assets/images/{{product.gambar}}">
+            </p-header>
+            <p>{{product.harga | currency:'Rp ':'symbol':'3.0'}}</p>
+            <p-footer>
+                <button pButton type="button" label="Pesan" icon="pi pi-shopping-cart" iconPos="left" class="linov-btn" routerLink="/foods/{{product.id}}" ></button>
+            </p-footer>
+        </p-card>
+    </div>
+    
+</div>
